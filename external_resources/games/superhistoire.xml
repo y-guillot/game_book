@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<game title="Une super histoire..." lang="fr" id="superstory">
+	<steps>
+		<step>
+			<id>0</id>
+			<description>Vous arrivez a l'école. Il est 8h du matin et vous avez froid. Vous êtes presque en retard.</description>
+			<question>Que faites-vous ?</question>
+			<actions>
+				<choice gotostep="1">Vous buvez un café/fumez une cigarette</choice>
+				<choice gotostep="2">Vous allez directement en cours</choice>
+				<choice gotostep="11">Vous décidez de sécher les cours et d'aller à la salle d'arcade</choice>
+			</actions>
+		</step>
+		<step>
+			<id>1</id>
+			<description>Maintenant, vous êtes définitivement en retard. Le prof vous demande pourquoi vous êtes en retard.</description>
+			<question>Que lui répondez-vous ?</question>
+			<actions>
+				<choice gotostep="2">Que vous êtes désolé et que ça ne se reproduira plus</choice>
+				<choice gotostep="3">Que vous vous êtes fait attaquer par un ours</choice>
+				<choice gotostep="8">Que vous pouvez finir votre nuit dans le couloir</choice>
+			</actions>
+		</step>
+		<step>
+			<id>2</id>
+			<description>Le cours se déroule normalement, mais il est terriblement ennuyant.</description>
+			<question>Que faites-vous ?</question>
+			<actions>
+				<choice gotostep="3">Vous vous endormez</choice>
+				<choice gotostep="4">Vous suivez avec toute votre attention</choice>
+			</actions>
+		</step>
+		<step>
+			<id>3</id>
+			<description>Vous finissez le cours dans le couloir. Arrivent bientot les partiels</description>
+			<question>Que faites-vous ?</question>
+			<actions>
+				<choice gotostep="4">Vous révisez</choice>
+				<choice gotostep="5">Vous ne révisez pas</choice>
+			</actions>
+		</step>
+		<step>
+			<id>4</id>
+			<description>Vous êtes en partiels.</description>
+			<question>Les réussissez-vous ?</question>
+			<actions>
+				<choice gotostep="6">Oui</choice>
+			</actions>
+		</step>
+		<step>
+			<id>5</id>
+			<description>Vous êtes en partiels.</description>
+			<question>Les réussissez-vous ?</question>
+			<actions>
+				<choice gotostep="7">Non</choice>
+				<choice gotostep="12">Vous pensez, mais non</choice>
+				<choice gotostep="7">Vous rentrez chez vous</choice>
+			</actions>
+		</step>
+		<step>
+			<id>6</id>
+			<description>Vous avez réussi vos partiels</description>
+			<question>Bravo !</question>
+			<actions/>
+		</step>
+		<step>
+			<id>7</id>
+			<description>Vous avez raté vos partiels.</description>
+			<question>Que faites-vous ?</question>
+			<actions>
+				<choice gotostep="0">Vous redoublez</choice>
+				<choice gotostep="6">Vous sortez un chèque pour avoir votre diplome</choice>
+				<choice gotostep="12">Vous allez demander de l'aide à un prof</choice>
+			</actions>
+		</step>
+		<step>
+			<id>8</id>
+			<description>Un prof passe dans le couloir et vous demande ce que vous faites là.</description>
+			<question>Que répondez-vous ?</question>
+			<actions>
+				<choice gotostep="5">Le cours m'ennuie alors je préfère dormir dans le couloir</choice>
+				<choice gotostep="5">J'ai essayé de suivre le cours mais je ne fais que m'endormir</choice>
+				<choice gotostep="9">Je suis narcoleptique</choice>
+			</actions>
+		</step>
+		<step>
+			<id>9</id>
+			<description>On vous demande de justifier votre narcolepsie.</description>
+			<question>Que faites-vous ?</question>
+			<actions>
+				<choice gotostep="10">Vous avouez que vous avez menti</choice>
+				<choice gotostep="2">Vous frabriquez un faux justificatif</choice>
+			</actions>
+		</step>
+		<step>
+			<id>10</id>
+			<description>Vous êtes exclu pour 3 jours.</description>
+			<question>Que faites-vous ?</question>
+			<actions>
+				<choice gotostep="5">Vous partez à la plage vous dorer au soleil</choice>
+				<choice gotostep="4">Vous en profitez pour réviser</choice>
+			</actions>
+		</step>
+		<step>
+			<id>11</id>
+			<description>Vous passez la matinée à jouer mais vous avez complètement vidé votre porte-feuille.</description>
+			<question>Que faites-vous ensuite ?</question>
+			<actions>
+				<choice gotostep="5">Vous partez à la plage vous dorer au soleil</choice>
+				<choice gotostep="2">Vous décidez de retourner en cours</choice>
+			</actions>
+		</step>
+		<step>
+			<id>12</id>
+			<description>Vous êtes inscrit au rattrapages.</description>
+			<question>Que faites-vous en attendant le jour J ?</question>
+			<actions>
+				<choice gotostep="13">Vous partez en vacances</choice>
+				<choice gotostep="6">Vous décidez de réviser les matières les plus faciles</choice>
+			</actions>
+		</step>
+		<step>
+			<id>13</id>
+			<description>Vous loupez complètement les rattrapages.</description>
+			<question>Que faites-vous ?</question>
+			<actions>
+				<choice gotostep="0">Vous redoublez</choice>
+				<choice gotostep="14">Vous décidez de laisser tomber les études</choice>
+			</actions>
+		</step>
+		<step>
+			<id>14</id>
+			<description>Vous êtes chez vous.</description>
+			<question>Que faites-vous ?</question>
+			<actions>
+				<choice gotostep="15">Vous cherchez des offres d'emploi</choice>
+				<choice gotostep="16">Vous créez un CV pour le mettre en ligne sur Monster.fr</choice>
+			</actions>
+		</step>
+		<step>
+			<id>15</id>
+			<description>Vous lisez les petites annonces du journal mais cela vous ennuie et vous vous lassez vite de vos recherches</description>
+			<question>Que faites-vous ?</question>
+			<actions>
+				<choice gotostep="0">Vous décidez finalement de retourner à l'école</choice>
+				<choice gotostep="16">Vous cherchez une formation...</choice>
+			</actions>
+		</step>
+		<step>
+			<id>16</id>
+			<description>On vous contacte pour une formation de développeur Java</description>
+			<question>Est-ce que vous acceptez ?</question>
+			<actions>
+				<choice gotostep="17">Bien sûr ça a l'air super cool !</choice>
+				<choice gotostep="18">Jamais de la vie je deviendrais un geek (ou une geekette)...</choice>
+			</actions>
+		</step>
+		<step>
+			<id>17</id>
+			<description>Vous galérez pendant des mois à apprendre à "pisser du code", et finalement cela commence à vous plaire et vous trouver votre premier job de développeur/développeuse !</description>
+			<question>Bravo !</question>
+			<actions />
+		</step>
+		<step>
+			<id>18</id>
+			<description>Vous décidez de rester à la maison et de vous inscrire au RSA parce que glander en profitant du système... C'est la base !</description>
+			<question>Ah bah bravo...</question>
+			<actions />
+		</step>
+	</steps>
+</game>

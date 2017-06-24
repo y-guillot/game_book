@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+	http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.xcalebret</groupId>
+	<artifactId>gamebook</artifactId>
+	<version>0.0.1</version>
+
+	<!-- jar|war|ear|pom. L'identifiant reconnu par maven sera "org.xcalebret:gamebook:0.0.1:jar" -->
+	<packaging>jar</packaging>
+
+	<properties>
+		<!-- encoding pour les sources de notre dossier src : on force maven à 
+			ne pas utiliser par defaut le jeu de caratcère de l'OS sur lequel le projet 
+			est construit. -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<logback.version>1.2.3</logback.version>
+		<slf4j.version>1.7.25</slf4j.version>
+	</properties>
+
+	<dependencies>
+		<!-- Dépendances aux librairies de logs -->
+		<!-- <dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>${logback.version}</version>
+		</dependency> -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${logback.version}</version>
+		</dependency>
+	<!-- 	
+		<dependency>
+           <groupId>org.slf4j</groupId>
+           <artifactId>slf4j-simple</artifactId>
+           <version>${slf4j.version}</version>
+		</dependency> -->
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.6.1</version>
+				<configuration>
+					<source>1.8</source> <!-- Java 1.8 requis pour la compilation -->
+					<target>1.8</target> <!-- Java 1.8 requis pour l'execution -->
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>
